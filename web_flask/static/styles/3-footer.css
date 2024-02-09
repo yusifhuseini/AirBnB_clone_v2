@@ -1,0 +1,19 @@
+<<<<<<< HEAD
+/*
+ * === Footer style ===
+ */
+
+=======
+>>>>>>> fbc8b3ff7d981ae766ee7c2a86ad1ace0f06995f
+/* Footer style */
+footer {
+  align-items: center;
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+  bottom: 0;
+  display: flex;
+  height: 60px;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+}
