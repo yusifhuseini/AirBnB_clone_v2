@@ -1,15 +1,4 @@
 header {
-<<<<<<< HEAD
-    background: white;
-    height: 70px;
-    width: 100%;
-    border-bottom: 1px solid #CCCCCC;
-}
-header .logo {
-    background: url("../images/logo.png") no-repeat;
-    left: 20px;
-    height: 100%;
-=======
 	background-color: white;
 	height: 70px;
 	width: 100%;
@@ -26,5 +15,4 @@ header .logo {
 	background-position: center;
 
 	margin-left: 20px;
->>>>>>> fbc8b3ff7d981ae766ee7c2a86ad1ace0f06995f
 }

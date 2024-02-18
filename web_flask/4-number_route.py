@@ -1,55 +1,13 @@
 #!/usr/bin/python3
-"""Starts a Flask web application.
-
-The application listens on 0.0.0.0, port 5000.
-Routes:
-    /: Displays 'Hello HBNB!'.
-    /hbnb: Displays 'HBNB'.
-    /c/<text>: Displays 'C' followed by the value of <text>.
-    /python/(<text>): Displays 'Python' followed by the value of <text>.
-    /number/<n>: Displays 'n is a number' only if <n> is an integer.
 """
-<<<<<<< HEAD
-from flask import Flask
-from flask import abort
-=======
 A script that starts a Flask web application:
 """
 
 from flask import Flask
->>>>>>> fbc8b3ff7d981ae766ee7c2a86ad1ace0f06995f
 
 app = Flask(__name__)
 
 
-<<<<<<< HEAD
-@app.route("/", strict_slashes=False)
-def hello_hbnb():
-    """Displays 'Hello HBNB!'."""
-    return "Hello HBNB!"
-
-
-@app.route("/hbnb", strict_slashes=False)
-def hbnb():
-    """Displays 'HBNB'."""
-    return "HBNB"
-
-
-@app.route("/c/<text>", strict_slashes=False)
-def c(text):
-    """Displays 'C' followed by the value of <text>.
-
-    Replaces any underscores in <text> with slashes.
-    """
-    text = text.replace("_", " ")
-    return "C {}".format(text)
-
-
-@app.route("/python", strict_slashes=False)
-@app.route("/python/<text>", strict_slashes=False)
-def python(text="is cool"):
-    """Displays 'Python' followed by the value of <text>.
-=======
 @app.route('/', strict_slashes=False)
 def hello_route():
     """
@@ -79,15 +37,8 @@ def c_route(text):
         str: "C <text>"
     """
     return "C {}".format(text.replace('_', ' '))
->>>>>>> fbc8b3ff7d981ae766ee7c2a86ad1ace0f06995f
 
-    Replaces any underscores in <text> with slashes.
-    """
-    text = text.replace("_", " ")
-    return "Python {}".format(text)
 
-<<<<<<< HEAD
-=======
 @app.route('/python', strict_slashes=False)
 @app.route('/python/<text>', strict_slashes=False)
 def python_route(text="is_cool"):
@@ -99,18 +50,8 @@ def python_route(text="is_cool"):
         str: "Python <text>"
     """
     return "Python {}".format(text.replace('_', ' '))
->>>>>>> fbc8b3ff7d981ae766ee7c2a86ad1ace0f06995f
 
-@app.route("/number/<int:n>", strict_slashes=False)
-def number(n):
-    """Displays 'n is a number' only if n is an integer."""
-    return "{} is a number".format(n)
 
-<<<<<<< HEAD
-
-if __name__ == "__main__":
-    app.run(host="0.0.0.0")
-=======
 @app.route('/number/<int:n>', strict_slashes=False)
 def number_route(n):
     """
@@ -123,4 +64,3 @@ def number_route(n):
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
->>>>>>> fbc8b3ff7d981ae766ee7c2a86ad1ace0f06995f

@@ -21,17 +21,10 @@
           <H4>&nbsp;</H4>
           <DIV class="popover">
             <UL>
-<<<<<<< HEAD
-            {% for state in states.values()|sort(attribute="name") %}
-              <LI><STRONG>{{ state.name }}</STRONG>
-                <UL>
-                {% for city in state.cities|sort(attribute="name") %}
-=======
             {% for state in models.states|sort(attribute='name') %}
               <LI><STRONG>{{ state.name }}</STRONG>
                 <UL>
                 {% for city in state.cities|sort(attribute='name') %}
->>>>>>> fbc8b3ff7d981ae766ee7c2a86ad1ace0f06995f
                   <LI>{{ city.name }}</LI>
                 {% endfor %}
                 </UL>
@@ -44,11 +37,7 @@
           <H3>Amenities</H3>
           <H4>&nbsp;</H4>
           <UL class="popover">
-<<<<<<< HEAD
-          {% for amenity in amenities.values()|sort(attribute="name") %}
-=======
           {% for amenity in models.amenities|sort(attribute='name') %}
->>>>>>> fbc8b3ff7d981ae766ee7c2a86ad1ace0f06995f
             <LI>{{ amenity.name }}</LI>
           {% endfor %}
           </UL>
@@ -58,11 +47,7 @@
     </DIV>
 
     <FOOTER>
-<<<<<<< HEAD
-      Holberton School
-=======
       Best School
->>>>>>> fbc8b3ff7d981ae766ee7c2a86ad1ace0f06995f
     </FOOTER>
   </BODY>
 </HTML>
